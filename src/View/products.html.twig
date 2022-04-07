@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bonjour</title>
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <h2>Sa marche</h2>
+        <div>
+            {% for product in products %}
+
+                {% if product == products.0 or product == products.1 or product == products.2 %}
+                    {{ product }}
+                {% endif %}
+                
+            {% endfor %}
+        </div>
+
+        <div>
+            {% for product in products %}
+            
+                {% if product == products.3 or product == products.4 or product == products.5 %}
+                    {{ product }}
+                {% endif %}
+                
+            {% endfor %}
+        </div>
+ 
+    {{ dump(products) }}
+    </body>
+</body>
+
+</body>
+
+
+</html>
